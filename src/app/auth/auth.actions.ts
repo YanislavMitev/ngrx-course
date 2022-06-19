@@ -1,11 +1,12 @@
 import { createAction, props } from '@ngrx/store';
 import { User } from './model/user.model';
+import { LOGIN_ACTION, LOGOUT_ACTION } from './action-types';
 
 export const login = createAction(
-	'[Login Page] User Login',
+	LOGIN_ACTION,
 	props<{ user: User }>()
 );
 
 export const logout = createAction(
-	'[Top Menu] Logout'
+	LOGOUT_ACTION
 );
